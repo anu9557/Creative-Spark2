@@ -1,0 +1,48 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+h2{
+  color: rgb(226, 228, 238);
+}
+body{
+  background-image:url('/images/img2.jpg');
+}
+.logo{
+  width: 90px;
+  margin: auto;
+}
+
+.row{
+  width: 750px;
+  margin: auto;
+  margin-top: 20px;
+}
+.B{
+  width: 900px;
+  margin: auto;
+}
+.A{
+  margin-top: 10px;
+
+}
+
+
+nav div ul li a{
+  color: rgb(224, 224, 238);
+}
+
+.container{
+  color: aliceblue;
+}
+
+
+th{
+  font-size: 20px;
+  color: rgb(74, 58, 157);
+ 
+}
+h3{
+  color: black;
+}

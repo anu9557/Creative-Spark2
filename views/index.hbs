@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <style>
+        .row{
+            margin-top: 0%;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+
+     <h2>Add Employee</h2>
+
+    <div class="row">
+        
+        <div class="col-md-2"></div>
+
+        <div class="col-md-10">
+      
+       
+        <form class="form-horizontal" method="post" action="/addUser"> <!--indexjs 1n handle karnw-->
+        <!--action 1k denw route 1 call wen vidiht,
+        route eken data tika arn (form eke input karn data) database 1t save krnw
+        input field eke name tag 1 use karnw submit click kalm action 1k denna oni route 1t mona route ekend e post request handle karnne kiyan 1-->
+            
+            <div class="form-group">
+                <label for="exampleInputFirstName" class="col-sm-2 control-lable">First Name</label>
+                <div class= "col-sm-10">
+                    <input type="text" class="form-control" id="exampleInputFirstName" placeholder="Enter first name" name="fname" >
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputFirstLast" class="col-sm-2 control-lable">Last Name</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="exampleInputFirstLast" placeholder="Enter last name" name="lname" >
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="exampleInputEmail1" class="col-sm-2 control-lable">Email</label>
+                <div class= "col-sm-10">
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" name="email" >
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="inputPassword" class="col-sm-2 control-lable">Password</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword" placeholder="Password" name="pass1" >
+                </div>
+            </div>
+
+            <!--<div class="form-group">
+                <label for="inputPassword2" class="col-sm-2 control-lable">Confirm Password</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword2" placeholder="Confirm Password" name="pass2" required>
+                </div>
+            </div>-->
+        
+            <div class="form-group">
+                <div class = "col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-primary col-xs-6 col-sm-12" id="adduser">Add User</button>
+                </div>
+            </div>
+            
+        </form>
+   
+
+        </div>
+
+    <div class="col-md-2"></div>
+    </div>
+
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<div class="container">
+<div class="row">
+    <h2>User Table</h2>
+    
+
+      
+         
+            <table class="table table-hover">
+            
+                <thead>
+                    <th>FirstName</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>Actions</th>
+
+                </thead>
+
+                <tbody>
+
+                
+                {{#each users}}  <!--php wl tiyen for each 1k wage loop 1k,
+                                index.js eke yiyen users kiyn key 1 data, rows wl tiyen data rap krl ywnw
+                                object rows kiyk tiyenwd kiyl loop wenw-->
+
+                    <tr>
+                        <td> {{ this.fname }}</td> <!-- ewele use wen user ge fname 1-->
+                        <td> {{ this.lname }}</td>
+                        <td> {{ this.email }}</td>
+                        
+
+                        
+                        <td>    
+                            <a href="/edit/{{ this.id }}"><button class="btn btn-primary">Edit</button> </a> 
+                            <a href="/deleteUser/{{ this.id }}"><button class="btn btn-primary">Delete</button> </a>
+                        
+                        </td>
+                    </tr>
+                {{/each}}
+             
+                </tbody>
+
+            </table>
+          
+        </div>
+
+</div>
